@@ -7,79 +7,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-   <header>
-       <div>
+    <div class="container-fluid bg-header rounded-bottom p-0 g-0 ">
+   <header class="">
+       <div class="container p-3">
            <div>
-               <div>
-                   <h1>Ristorante con Fusion</h1>
-                   <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
-                       lipsmacking creations will tickle your culinary senses!</p>
+               <div class="row text-white">
+                   <div class="col-sm-12 col-md-8">
+                       <h1 class="fw-bolder text-uppercase">Ristorante con Fusion</h1>
+                   </div>
+                   <div class="col-sm-12 col-md-8">
+                       <p class="fw-light">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                           lipsmacking creations will tickle your culinary senses!</p>
+
+                   </div>
                </div>
                <div>
                </div>
            </div>
        </div>
    </header>
+   </div>
 
-   <div>
-       <div>
-           <div>
-               <h3>Our Lipsmacking Culinary Creations</h3>
+   
+
+   <div class="container">
+       <div class="row py-3 my-3 ">
+           <div class="col-sm-12 col-lg-3 align-self-lg-center order-md-1">
+               <p class="display-5 fw-bold">Our Lipsmacking Culinary Creations</p>
            </div>
-           <div>
-               <h2>Uthappizza</h2>
-               <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives,
+           <div class="col-sm-12 col-lg-9 align-self-lg-center">
+               <p class="h2 fw-bold">Uthappizza</p>
+               <p class="fs-4 ">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives,
                    ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
            </div>
        </div>
 
 
-       <div>
-           <div>
-               <h3>This Month's Promotions</h3>
+       <div class="row py-3 my-3">
+           <div class="col-sm-12 col-lg-3 align-self-lg-center">
+               <p class="display-5 fw-bold">This Month's Promotions</p>
            </div>
-           <div>
-               <h2>Weekend Grand Buffet</h2>
-               <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
+           <div class="col-sm-12 col-lg-9 align-self-lg-center">
+               <p class="h2 fw-bold">Weekend Grand Buffet</p>
+               <p class="fs-4 ">Featuring mouthwatering combinations with a choice of five different salads, six
+                   enticing appetizers,
                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99
                    per person </p>
            </div>
        </div>
 
-       <div>
-           <div>
-               <h3>Meet our Culinary Specialists</h3>
+       <div class="row py-3 my-3 d-none d-md-flex">
+           <div class="col-sm-12 col-lg-3 align-self-lg-center order-lg-1">
+               <p class="display-5 fw-bold">Meet our Culinary Specialists</p>
            </div>
-           <div>
-               <h2>Alberto Somayya</h2>
-               <h4>Executive Chef</h4>
-               <p>Award winning three-star Michelin chef with wide International experience having worked closely with
+           <div class="col-lg-9 align-self-lg-center py-3">
+               <p class="h3 fw-bold">Alberto Somayya</p>
+               <p class="h5 fw-lighter">Executive Chef</p>
+               <p class="fs-4">Award winning three-star Michelin chef with wide International
+                   experience having worked closely with
                    whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
-                   experiences. </p>
+                   experiences.</p>
            </div>
        </div>
    </div>
 
-   <footer>
-       <div>
-           <div>
-               <div>
+   <footer class="container-fluid bg-footer rounded-top p-0 g-0 text-white">
+       <div class="container py-5">
+           <div class="row">
+               <div class="col-sm-12 text-center col-lg-3 ">
                    <h5>Links</h5>
-                   <ul>
-                       <li><a href="#">Home</a></li>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">Menu</a></li>
-                       <li><a href="#">Contact</a></li>
+                   <ul class="nav flex-column">
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">About</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Menu</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#" >Contact</a>
+                       </li>
                    </ul>
+                   
                </div>
-               <div>
+               <div class="col-sm-12 text-center col-lg-3 mt-sm-3 mt-lg-0 ">
                    <h5>Our Address</h5>
                    <address>
                        121, Clear Water Bay Road<br>
@@ -90,18 +114,20 @@
                        Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
                    </address>
                </div>
-               <div>
-                   <div>
-                       <a href="http://google.com/+">Google+</a>
-                       <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                       <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                       <a href="http://twitter.com/">Twitter</a>
-                       <a href="http://youtube.com/">YouTube</a>
-                       <a href="mailto:">Mail</a>
+               <div class="col-sm-12 text-center col-lg-6 mt-sm-3 mt-lg-0 align-self-lg-center ">
+                   <div class="">
+                       <a href="http://google.com/+"><i class="fa fa-google-plus fa-2x mx-2" aria-hidden="true"></i></a>
+                       <a href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-square fa-2x mx-2"
+                               aria-hidden="true"></i></a>
+                       <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-2x mx-2"
+                               aria-hidden="true"></i></a>
+                       <a href="http://twitter.com/"><i class="fa fa-twitter fa-2x mx-2" aria-hidden="true"></i></a>
+                       <a href="http://youtube.com/"><i class="fa fa-youtube fa-2x mx-2" aria-hidden="true"></i></a>
+                       <a href="mailto:"><i class="fa fa-envelope fa-2x mx-2" aria-hidden="true"></i></a>
                    </div>
                </div>
            </div>
-           <div>
+           <div class="row text-center pt-5">
                <div>
                    <p>© Copyright 2018 Ristorante Con Fusion</p>
                </div>
@@ -109,7 +135,7 @@
        </div>
    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 

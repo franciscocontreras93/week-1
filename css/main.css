@@ -1,0 +1,58 @@
+.bg-header {
+    background: linear-gradient(328deg, #555555, #202020);
+    background-size: 400% 400%;
+
+    -webkit-animation: bg-animation 30s ease infinite;
+    -moz-animation: bg-animation 30s ease infinite;
+    animation: bg-animation 30s ease infinite;
+}
+.bg-footer {
+    background: linear-gradient(328deg, #202020, #555555);
+    background-size: 400% 400%;
+
+    -webkit-animation: bg-animation 30s ease infinite;
+    -moz-animation: bg-animation 30s ease infinite;
+    animation: bg-animation 30s ease infinite;
+}
+
+@-webkit-keyframes bg-animation {
+    0% {
+        background-position: 0% 15%
+    }
+
+    50% {
+        background-position: 100% 86%
+    }
+
+    100% {
+        background-position: 0% 15%
+    }
+}
+
+@-moz-keyframes bg-animation {
+    0% {
+        background-position: 0% 15%
+    }
+
+    50% {
+        background-position: 100% 86%
+    }
+
+    100% {
+        background-position: 0% 15%
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 15%
+    }
+
+    50% {
+        background-position: 100% 86%
+    }
+
+    100% {
+        background-position: 0% 15%
+    }
+}
