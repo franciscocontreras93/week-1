@@ -11,15 +11,53 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 
-    <title>Hello, world!</title>
+    <title>Ristorante Con Fusion: Home</title>
 </head>
 
 <body>
-    <div class="container-fluid bg-header rounded-bottom p-0 g-0 ">
-   <header class="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bolder" href="#">Confusion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bolder">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html"><i class="fa fa-info" aria-hidden="true"></i> About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-list" aria-hidden="true"></i>
+                        Menu
+                    </a>
+                    <!-- DROPDOWN ITEMS -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <!-- END DROPDOWN ITEMS -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-address-card" aria-hidden="true"></i> Contact</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+   <header class="container-fluid bg-header rounded-bottom g-0 ">
        <div class="container p-3">
            <div>
                <div class="row text-white">
@@ -37,14 +75,14 @@
            </div>
        </div>
    </header>
-   </div>
+ 
 
    
 
    <div class="container">
        <div class="row py-3 my-3 ">
            <div class="col-sm-12 col-lg-3 align-self-lg-center order-md-1">
-               <p class="display-5 fw-bold">Our Lipsmacking Culinary Creations</p>
+               <p class="display-6 fw-lighter">Our Lipsmacking Culinary Creations</p>
            </div>
            <div class="col-sm-12 col-lg-9 align-self-lg-center">
                <p class="h2 fw-bold">Uthappizza</p>
@@ -56,7 +94,7 @@
 
        <div class="row py-3 my-3">
            <div class="col-sm-12 col-lg-3 align-self-lg-center">
-               <p class="display-5 fw-bold">This Month's Promotions</p>
+               <p class="display-6 fw-lighter">This Month's Promotions</p>
            </div>
            <div class="col-sm-12 col-lg-9 align-self-lg-center">
                <p class="h2 fw-bold">Weekend Grand Buffet</p>
@@ -69,7 +107,7 @@
 
        <div class="row py-3 my-3 d-none d-md-flex">
            <div class="col-sm-12 col-lg-3 align-self-lg-center order-lg-1">
-               <p class="display-5 fw-bold">Meet our Culinary Specialists</p>
+               <p class="display-6 fw-lighter">Meet our Culinary Specialists</p>
            </div>
            <div class="col-lg-9 align-self-lg-center py-3">
                <p class="h3 fw-bold">Alberto Somayya</p>
@@ -82,47 +120,30 @@
        </div>
    </div>
 
-   <footer class="container-fluid bg-footer rounded-top p-0 g-0 text-white">
+   <footer class="container-fluid bg-footer rounded-top p-0 g-0 text-black">
        <div class="container py-5">
            <div class="row">
-               <div class="col-sm-12 text-center col-lg-3 ">
-                   <h5>Links</h5>
-                   <ul class="nav flex-column">
-                       <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Home</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">About</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Menu</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#" >Contact</a>
-                       </li>
-                   </ul>
-                   
-               </div>
-               <div class="col-sm-12 text-center col-lg-3 mt-sm-3 mt-lg-0 ">
+               
+               <div class="col-sm-12 text-center col-lg-6 mt-sm-3 mt-lg-0 ">
                    <h5>Our Address</h5>
                    <address>
-                       121, Clear Water Bay Road<br>
+                       <i class="fa fa-map-marker-alt" aria-hidden="true"></i> 121, Clear Water Bay Road<br>
                        Clear Water Bay, Kowloon<br>
                        HONG KONG<br>
-                       Tel.: +852 1234 5678<br>
-                       Fax: +852 8765 4321<br>
-                       Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                       <i class="fa fa-phone" aria-hidden="true"></i> +852 1234 5678<br>
+                       <i class="fa fa-fax" aria-hidden="true"></i> +852 8765 4321<br>
+                       <a href="">confusion@food.net</a>
                    </address>
                </div>
                <div class="col-sm-12 text-center col-lg-6 mt-sm-3 mt-lg-0 align-self-lg-center ">
                    <div class="">
-                       <a href="http://google.com/+"><i class="fa fa-google-plus fa-2x mx-2" aria-hidden="true"></i></a>
-                       <a href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-square fa-2x mx-2"
+                       
+                       <a href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook-square fa-2x mx-2"
                                aria-hidden="true"></i></a>
-                       <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-2x mx-2"
+                       <a href="http://www.linkedin.com/in/"><i class="fab fa-linkedin fa-2x mx-2"
                                aria-hidden="true"></i></a>
-                       <a href="http://twitter.com/"><i class="fa fa-twitter fa-2x mx-2" aria-hidden="true"></i></a>
-                       <a href="http://youtube.com/"><i class="fa fa-youtube fa-2x mx-2" aria-hidden="true"></i></a>
+                       <a href="http://twitter.com/"><i class="fab fa-twitter fa-2x mx-2" aria-hidden="true"></i></a>
+                       <a href="http://youtube.com/"><i class="fab fa-youtube fa-2x mx-2" aria-hidden="true"></i></a>
                        <a href="mailto:"><i class="fa fa-envelope fa-2x mx-2" aria-hidden="true"></i></a>
                    </div>
                </div>
@@ -135,8 +156,7 @@
        </div>
    </footer>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     </script>
 
 

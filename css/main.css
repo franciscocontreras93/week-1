@@ -6,13 +6,25 @@
     -moz-animation: bg-animation 30s ease infinite;
     animation: bg-animation 30s ease infinite;
 }
-.bg-footer {
-    background: linear-gradient(328deg, #202020, #555555);
+.bg-header-about {
+    background: linear-gradient(328deg, #4f525c, #1d202e);
     background-size: 400% 400%;
 
     -webkit-animation: bg-animation 30s ease infinite;
     -moz-animation: bg-animation 30s ease infinite;
     animation: bg-animation 30s ease infinite;
+}
+.bg-footer {
+    background: linear-gradient(328deg, #f0f0f0, #cacaca);
+    background-size: 400% 400%;
+
+    -webkit-animation: bg-animation 30s ease infinite;
+    -moz-animation: bg-animation 30s ease infinite;
+    animation: bg-animation 30s ease infinite;
+}
+
+.fa-bars {
+    color: #fafafa;;
 }
 
 @-webkit-keyframes bg-animation {
