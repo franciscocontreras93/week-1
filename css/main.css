@@ -20,7 +20,18 @@
     color: #fafafa;;
 }
 
+.btn-reserve {
+    color: #fff;
+    
+    background-color: #8d2727;
+    border-color: #8d2727
+}
 
+.btn-reserve:hover {
+    color: #fff;
+    background-color: #ad3722;
+    border-color: #ad3722
+}
 
 @-webkit-keyframes bg-animation {
     0% {
