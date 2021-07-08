@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es-ES">
 
 <head>
     <!-- Required meta tags -->
@@ -13,14 +13,69 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="js/main.js"></script>
 
     <title>Ristorante Con Fusion: Home</title>
 </head>
 
+
 <body class="">
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 m-1">
+                                <p class="display-5">Login</p>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                            
+                            <div class="col-md-6 mt-2 my-md-0">
+                                <div class="input-group ">
+                                    <span class="input-group-text" for="exampleInputEmail3"><i
+                                            class="fas fa-at"></i></span>
+                                    <input type="email" class="form-control form-control-md mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 my-md-0">
+                                <div class="input-group">
+                                    <span class="input-group-text" for="exampleInputEmail3"><i
+                                            class="fas fa-unlock"></i></span>
+                                    <input type="password" class="form-control form-control-md mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter Password">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate">
+                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                        Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-reserve">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand mr-auto" href="index.html"><img src="static/img/logo.png" height="60"
+            <a class="navbar-brand" href="index.html"><img src="static/img/logo.png" height="60"
                     width="auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,7 +83,7 @@
                 <i class="fa fa-bars fa-2x"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bolder">
+                <ul class="navbar-nav mb-2 mb-lg-0 fw-bolder mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home"
                                 aria-hidden="true"></i> Home </a>
@@ -58,6 +113,14 @@
                         <a class="nav-link" href="contactus.html"><i class="fa fa-address-card" aria-hidden="true"></i>
                             Contact</a>
                     </li>
+                    
+                </ul>
+                
+                <ul class="navbar-nav ms-auto">                    
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" data-bs-toggle="modal"
+                            data-bs-target="#loginModal" style="cursor: pointer; user-select: none;"><i class="fas fa-sign-in-alt"></i> Login </a>
+                    </li>     
                 </ul>
 
             </div>
@@ -77,8 +140,12 @@
                         <img src="static/img/logo.png" alt="">
                     </div>
                     <div class="col-12 col-lg-4 text-center align-self-center pt-5 pt-lg-0">
-                        <a type="" class="btn btn-reserve btn-lg" href="#reserve">Reserve Table</a>
+                        <a type="" class="btn btn-reserve btn-lg" href="#reserve" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-html="true" title='<em>Or Call Us at</em>
+                            <b>+512-3456789</b>'>Reserve Table</a>
+                           
                     </div>
+                    
 
                 </div>
                 <div>
@@ -260,9 +327,11 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     </script>
+    <script src="js/main.js"></script>
+
 
 
 </body>
